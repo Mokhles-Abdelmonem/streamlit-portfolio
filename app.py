@@ -16,7 +16,7 @@ PAGE_TITLE = "Mokhles Abdelmonem CV"
 PAGE_ICON = ":wave:"
 NAME = "Mokhles Abdelmonem"
 DESCRIPTION = """
-Mid Senior Python Developer.
+Python Developer
 """
 EMAIL = "mokhlesabdelmonem@gmail.com"
 SOCIAL_MEDIA = {
@@ -65,7 +65,7 @@ with col1:
 
 with col2:
     st.title(NAME)
-    st.write(DESCRIPTION)
+    st.subheader(DESCRIPTION)
     st.download_button(
         label=" 📄 Download Resume",
         data=PDFbyte,
