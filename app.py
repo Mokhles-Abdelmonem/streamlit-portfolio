@@ -29,7 +29,7 @@ SOCIAL_MEDIA = {
 PROJECTS = {
     "🏆 DATA Analysis": "https://github.com/Mokhles-Abdelmonem/DATA",
     "🏆 Streamlite Visualization App": "https://github.com/Mokhles-Abdelmonem/StreamliteApp",
-    "🏆 Chess Game  & TicTacToi & Rock Paper Scissors ": "hhttps://github.com/Mokhles-Abdelmonem/fastapi-react--socketio-mui-games",
+    "🏆 Chess Game  & TicTacToi & Rock Paper Scissors ": "https://github.com/Mokhles-Abdelmonem/fastapi-react--socketio-mui-games",
 }
 
 CERTIFICATIONS = {
