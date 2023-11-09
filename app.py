@@ -8,30 +8,44 @@ from PIL import Image
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "assets" / "CV.pdf"
-profile_pic = current_dir / "assets" / "profile-pic.png"
+profile_pic = current_dir / "assets" / "mokhles_profile.png"
 
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | John Doe"
+PAGE_TITLE = "Mokhles Abdelmonem CV"
 PAGE_ICON = ":wave:"
-NAME = "John Doe"
+NAME = "Mokhles Abdelmonem"
 DESCRIPTION = """
-Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
+Mid Senior Python Developer.
 """
-EMAIL = "johndoe@email.com"
+EMAIL = "mokhlesabdelmonem@gmail.com"
 SOCIAL_MEDIA = {
-    "YouTube": "https://youtube.com/c/codingisfun",
-    "LinkedIn": "https://linkedin.com",
-    "GitHub": "https://github.com",
-    "Twitter": "https://twitter.com",
+    "GitHub": "https://github.com/Mokhles-Abdelmonem",
+    "LinkedIn": "https://www.linkedin.com/in/mokhles-hussain-52ba91183/",
+    "hackerrank": "https://www.hackerrank.com/profile/mokhlesabdelmon1",
+    "Twitter": "https://twitter.com/MokhlesAbdelmo1",
+
 }
 PROJECTS = {
-    "🏆 Sales Dashboard - Comparing sales across three stores": "https://youtu.be/Sb0A9i6d320",
-    "🏆 Income and Expense Tracker - Web app with NoSQL database": "https://youtu.be/3egaMfE9388",
-    "🏆 Desktop Application - Excel2CSV converter with user settings & menubar": "https://youtu.be/LzCfNanQ_9c",
-    "🏆 MyToolBelt - Custom MS Excel add-in to combine Python & Excel": "https://pythonandvba.com/mytoolbelt/",
+    "🏆 DATA Analysis": "https://github.com/Mokhles-Abdelmonem/DATA",
+    "🏆 Streamlite Visualization App": "https://github.com/Mokhles-Abdelmonem/StreamliteApp",
+    "🏆 Chess Game  & TicTacToi & Rock Paper Scissors ": "hhttps://github.com/Mokhles-Abdelmonem/fastapi-react--socketio-mui-games",
 }
 
+CERTIFICATIONS = {
+    "🏆 Programming for Everybody (python)": "https://drive.google.com/file/d/15O1bt95XFz7LU0nqF3POzuNfgfiEw3cH/view?usp=share_link",
+    "🏆 Python Data Structures": "https://drive.google.com/file/d/1tcgmpWQyrLc319PqERIo7VNGr19-YOYC/view?usp=sharing",
+    "🏆 Using Python to Access Web Data": "https://drive.google.com/file/d/1X4YiTmM8nlgBKhRRL_bukr-MsU16spR_/view?usp=sharing",
+    "🏆 AI For Everyone": "https://drive.google.com/file/d/1ZnGj8qjCA0A7yAhGsCktLRdHGIu2EQCB/view?usp=sharing",
+
+    "🏆 Python Programming Basics": "https://drive.google.com/file/d/1iCW6Bk-F7vIYynnDpxEAZwXDR4wagivU/view?usp=sharing",
+    "🏆 Database Fundamentals": "https://drive.google.com/file/d/1c1i6R4pJ2A01jFGlmONletp5qxjGA5wZ/view?usp=sharing",
+    "🏆 Web development challenger": "https://drive.google.com/file/d/1c6MLR_xhT1K1s50dk-c1Hw7q6SSFGkue/view?usp=sharing",
+    "🏆 Data challenger track": "https://drive.google.com/file/d/1qujgmq36VSqE4-hE4JQRjXWNKZIqdQxT/view?usp=sharing",
+
+    "🏆 Advanced Data Analysis": "https://drive.google.com/file/d/1Xmrd0BLzY0hKmsduz_CkazsOMECU1sfb/view?usp=sharing",
+    "🏆 Data Analysis Professional": "https://drive.google.com/file/d/1oiyejQd6nZcLBbYahQZ7Ii0PBxDMOMUQ/view?usp=sharing",
+}
 
 st.set_page_config(page_title=PAGE_TITLE, page_icon=PAGE_ICON)
 
@@ -73,9 +87,9 @@ st.write('\n')
 st.subheader("Experience & Qulifications")
 st.write(
     """
-- ✔️ 7 Years expereince extracting actionable insights from data
-- ✔️ Strong hands on experience and knowledge in Python and Excel
-- ✔️ Good understanding of statistical principles and their respective applications
+- ✔️ 2 Years expereince python backend developer
+- ✔️ Strong hands on experience and knowledge in Python native
+- ✔️ Good understanding of statistics and data analysis principles
 - ✔️ Excellent team-player and displaying strong sense of initiative on tasks
 """
 )
@@ -86,9 +100,10 @@ st.write('\n')
 st.subheader("Hard Skills")
 st.write(
     """
-- 👩‍💻 Programming: Python (Scikit-learn, Pandas), SQL, VBA
-- 📊 Data Visulization: PowerBi, MS Excel, Plotly
-- 📚 Modeling: Logistic regression, linear regression, decition trees
+- 📚 Frameworks/Libs: Django, fastapi, JQuery, React
+- 👩‍💻 Tools/Libs: Git, Celery, Scrapy, selenium, pandas, NumPy, streamlit, socketio
+- 👩‍💻 Advanced tools: microservices architecture, grpcs, websocket, redis, kafka
+- 📊 Data Visulization: matplotlib, streamlit, tableau
 - 🗄️ Databases: Postgres, MongoDB, MySQL
 """
 )
@@ -100,39 +115,63 @@ st.subheader("Work History")
 st.write("---")
 
 # --- JOB 1
-st.write("🚧", "**Senior Data Analyst | Ross Industries**")
-st.write("02/2020 - Present")
+st.write("🚧", "**Backend Developer | Tawasol Map**")
+st.write("February 2023 – Present")
 st.write(
     """
-- ► Used PowerBI and SQL to redeﬁne and track KPIs surrounding marketing initiatives, and supplied recommendations to boost landing page conversion rate by 38%
-- ► Led a team of 4 analysts to brainstorm potential marketing and sales improvements, and implemented A/B tests to generate 15% more client leads
-- ► Redesigned data model through iterations that improved predictions by 12%
+- ► live streaming for a stratigic game similar to mafia city.
+- ► Used python websocket and redis to create backend server with MVC structure built in from scratch.
+- ► applyed microservices architecture using grpcs framework.
+- ► handling scheduler events by built in event system.
+- ► asynchronous programing
 """
 )
 
 # --- JOB 2
 st.write('\n')
-st.write("🚧", "**Data Analyst | Liberty Mutual Insurance**")
-st.write("01/2018 - 02/2022")
+st.write("🚧", "**FreeLancing & self project**")
+st.write("no specific timeline")
 st.write(
     """
-- ► Built data models and maps to generate meaningful insights from customer data, boosting successful sales eﬀorts by 12%
-- ► Modeled targets likely to renew, and presented analysis to leadership, which led to a YoY revenue increase of $300K
-- ► Compiled, studied, and inferred large amounts of data, modeling information to drive auto policy pricing
+- ► Data Analysis: Web Project apply data analysis principles (cleaning & visualization)
+- ► Simulator: delivery drivers with steaming live  data of the location, google api integration and socketio
+- ► Fixing & updates: Educational django app
+- ► odoo app: erp system
+- ► ai applications: face recognition & verification,  
+- ► Neural Networks learning: building micrograd, building makemore
 """
 )
 
 # --- JOB 3
 st.write('\n')
-st.write("🚧", "**Data Analyst | Chegg**")
-st.write("04/2015 - 01/2018")
+st.write("🚧", "**Backend Developer | Duty ltd**")
+st.write("Jan 2022 - October 2022")
 st.write(
     """
-- ► Devised KPIs using SQL across company website in collaboration with cross-functional teams to achieve a 120% jump in organic traﬃc
-- ► Analyzed, documented, and reported user survey results to improve customer communication processes by 18%
-- ► Collaborated with analyst team to oversee end-to-end process surrounding customers' return data
+- ► developing web project deliver a sets of Cyber security tools that test the security of the websites and tracking the founded Security vulnerabilities
+- ► applyed tools: Django , Rest Api , celery for handling heavy tasks, channels, elasticsearch, beautifulsoup4, httpx, Scrapy, selenium, the main tools executed by bash commands
 """
 )
+
+
+# --- EDUCATION ---
+st.write('\n')
+st.subheader("EDUCATION")
+st.write("---")
+st.write(
+    """
+Bachelor of agricultural engineering – jun 2020
+Cairo University GPA 2.8
+"""
+)
+
+# --- Certifications ---
+st.write('\n')
+st.subheader("Certifications")
+st.write("---")
+for project, link in CERTIFICATIONS.items():
+    st.write(f"[{project}]({link})")
+
 
 
 # --- Projects & Accomplishments ---
